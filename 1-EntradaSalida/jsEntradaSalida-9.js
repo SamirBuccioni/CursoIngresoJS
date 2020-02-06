@@ -4,6 +4,13 @@ mostrar el importe con un aumento del 10 %
 en el cuadro de texto "RESULTADO".*/
 function mostrarAumento()
 {
+    var importe;
+    var resultado;
 
-	
+    importe   = parseInt(document.getElementById("sueldo").value);
+
+    resultado = importe * 110/100;
+
+    document.getElementById("resultado").value = resultado;
+    	
 }
