@@ -4,7 +4,7 @@ function mostrar()
 	
 	var numero;
 
-	numero = Math.round(Math.random()*10);
+	numero = Math.floor(Math.random()*10)+1;
 
 	alert(numero);
 
