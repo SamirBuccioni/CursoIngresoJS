@@ -4,9 +4,9 @@ function mostrar()
 
 	while (numero > 0){
 
-		alert((numero))
+		alert(numero);
 
-		numero = numero - 1
+		numero --;
 	}
 
 

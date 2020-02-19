@@ -6,7 +6,9 @@ function mostrar()
 
 		console.log((numero + 1))
 
-		numero ++ 	
+		numero ++;
+		alert (numero);
+		
 	}
 
 
