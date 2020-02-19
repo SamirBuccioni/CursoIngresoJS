@@ -6,9 +6,9 @@ function mostrar()
 	var negativo=1;
 	var numero;
 
-	var respuesta='si';
+	var respuesta;
 
-while (respuesta == "si") {
+	do {
 
 		numero = parseFloat(prompt("Ingrese un número."));
 
@@ -22,7 +22,8 @@ while (respuesta == "si") {
 		
 		respuesta = prompt("Desea ingresar otro numero? Escriba \"si\" si es el caso");
 		contador ++
-	}
+	} while (respuesta == 'si');
+	
 
 
 document.getElementById('suma').value=positivo;
