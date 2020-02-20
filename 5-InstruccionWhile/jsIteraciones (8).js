@@ -17,13 +17,19 @@ function mostrar()
 		}
 		else if (numero < 0){
 			negativo = negativo * numero;
+			contador++;
 
 		}
 		
-		respuesta = prompt("Desea ingresar otro numero? Escriba \"si\" si es el caso");
-		contador ++
-	} while (respuesta == 'si');
+		respuesta = prompt("Desea ingresar otro numero? Escriba \"no\" si no es el caso");
+		
+	} while (!(respuesta == 'no' && respuesta == 'No'));
 	
+	if (contador == 0){
+
+		negativo = "No ingreso ningun negativo";
+	}
+
 
 
 document.getElementById('suma').value=positivo;
